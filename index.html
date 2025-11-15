@@ -59,24 +59,23 @@
         .nav-links a:hover {
             color: #ffd700;
         }
+.hero {
+    background: 
+        linear-gradient(to bottom, rgba(30, 60, 114, 0.40), rgba(0, 0, 0, 0.60)),
+        url('vessel.jpg');
+    background-size: cover;      /* FULL COVER */
+    background-position: center; /* CENTER IMAGE */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* remove fixed on mobile */
+    
+    min-height: 100vh;           /* FULL SCREEN HEIGHT */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    text-align: center;
+}
 
-        .hero {
-            background: 
-                linear-gradient(to bottom, rgba(30, 60, 114, 0.75), rgba(0, 0, 0, 0.85)), 
-                url('vessel.jpg');
-            background-size: cover;
-            background-position: center center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            color: white;
-            text-align: center;
-            padding: 10rem 2rem;
-            position: relative;
-            min-height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
         .hero-content {
             max-width: 900px;
@@ -336,11 +335,14 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
+  <section id="home" class="hero">
+    <div class="hero-content">
         <h1>Your Trusted Global Freight Forwarding Partner</h1>
         <p>Connecting Your Business to the World from the Heart of UAE</p>
         <a href="#contact" class="cta-button">Get a Quote</a>
-    </section>
+    </div>
+</section>
+
 
     <div class="container">
         <section id="about" class="section">
