@@ -19,23 +19,16 @@
         }
 
         header {
-       background: rgba(30, 60, 114, 0.3) !important;
-  backdrop-filter: blur(10px);
-  color: white;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-        }
-
-        header.scrolled {
-  background: rgba(30, 60, 114, 0.5) ;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         nav {
-background: transparent;
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -45,13 +38,10 @@ background: transparent;
         }
 
         .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 60px;
-            display: block;
+                <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo" style="height: 60px;">
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
         }
 
         .nav-links {
@@ -71,10 +61,10 @@ background: transparent;
             color: #ffd700;
         }
 
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('./VESSEL.JPG');}
-
+        .hero {
+            background: 
+                linear-gradient(to bottom, rgba(30, 60, 114, 0.75), rgba(0, 0, 0, 0.85)), 
+                url('vessel.jpg');
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
@@ -115,7 +105,10 @@ background: transparent;
             letter-spacing: 1px;
             line-height: 1.2;
             text-transform: uppercase;
-            color: #ffffff;
+            background: linear-gradient(to right, #ffffff, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero p {
@@ -141,23 +134,18 @@ background: transparent;
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            background: #ffd700;
             color: #1e3c72;
-            padding: 1.2rem 3rem;
+            padding: 1rem 2.5rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .cta-button:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6);
-            background: linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,215,0,0.3);
         }
 
         .container {
@@ -319,18 +307,8 @@ background: transparent;
         }
 
         @media (max-width: 768px) {
-            .hero {
-                padding: 6rem 1.5rem;
-                min-height: 70vh;
-                background-attachment: scroll;
-            }
-            
             .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
+                font-size: 2rem;
             }
             
             .about-content,
@@ -348,9 +326,7 @@ background: transparent;
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo">
-            </div>
+            <div class="logo">AVN SHIPPING FZE</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -362,11 +338,9 @@ background: transparent;
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Your Trusted Global Freight Forwarding Partner</h1>
-            <p>Connecting Your Business to the World from the Heart of UAE</p>
-            <a href="#contact" class="cta-button">Get a Quote Today</a>
-        </div>
+        <h1>Your Trusted Global Freight Forwarding Partner</h1>
+        <p>Connecting Your Business to the World from the Heart of UAE</p>
+        <a href="#contact" class="cta-button">Get a Quote</a>
     </section>
 
     <div class="container">
@@ -519,12 +493,12 @@ background: transparent;
                     
                     <div class="contact-item">
                         <strong>📞 Phone:</strong>
-                        <span>+971 65533503</span>
+                        <span>+971 521297318</span>
                     </div>
                     
                     <div class="contact-item">
                         <strong>✉️ Email:</strong>
-                        <span>sales@avnshipping.com</span>
+                        <span>director@avnshipping.com</span>
                     </div>
                     
                     <div class="contact-item">
@@ -558,7 +532,7 @@ background: transparent;
                     </div>
                     
                     <div style="margin-top: 2rem;">
-                        <a href="mailto:sales@avnshipping.com" class="cta-button" style="display: block; text-align: center;">Request a Quote</a>
+                        <a href="mailto:director@avnshipping.com" class="cta-button" style="display: block; text-align: center;">Request a Quote</a>
                     </div>
                 </div>
             </div>
