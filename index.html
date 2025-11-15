@@ -18,34 +18,35 @@
             color: #333;
         }
 
-header {
-    background: #ffffff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-}
+        header {
+            background: rgba(30, 60, 114, 0.7);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
 
+        header.scrolled {
+            background: rgba(30, 60, 114, 0.95);
+        }
 
-.nav-links a {
-    color: black; /* make links visible */
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
 
-.nav-links a:hover {
-    color: #1e3c72; /* optional hover color */
-}
-
-
-.logo span {
-    color: black; /* Ensure the company name is black */
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 10px;
-}
+        .logo {
+            display: flex;
+            align-items: center;
+        }
 
         .logo img {
             height: 60px;
@@ -58,6 +59,16 @@ header {
             gap: 2rem;
         }
 
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
 
         .hero {
             background: linear-gradient(to bottom, rgba(30, 60, 114, 0.75), rgba(0, 0, 0, 0.85)), 
@@ -333,22 +344,20 @@ header {
     </style>
 </head>
 <body>
-<header>
-    <nav>
-        <div class="logo">
-            <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo">
-            <span>AVN SHIPPING FZE</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#industries">Industries</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
