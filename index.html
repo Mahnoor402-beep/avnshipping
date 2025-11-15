@@ -62,9 +62,17 @@
             letter-spacing: 0.5px;
         }
 
+ .nav-links {
+    display: flex;
+    flex-direction: row; /* ensure horizontal */
+    list-style: none;
+    gap: 2rem;
+}
+@media (max-width: 768px) {
     .nav-links {
-    flex-direction: column;
-    gap: 1rem;
+        flex-direction: column; /* vertical for mobile */
+        gap: 1rem;
+    }
 }
 
 
