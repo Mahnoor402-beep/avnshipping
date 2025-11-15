@@ -43,10 +43,19 @@
             padding: 0 2rem;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between logo and text */
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
 
         .logo img {
             height: 60px;
@@ -346,9 +355,11 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo">
-            </div>
+<div class="logo">
+    <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo">
+    <span>AVN SHIPPING FZE</span>
+</div>
+
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
