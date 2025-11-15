@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVN Shipping FZE - Freight Forwarding Solutions in UAE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231e3c72" width="1200" height="600"/><path fill="%232a5298" d="M0 300L50 283.3C100 266.7 200 233.3 300 233.3C400 233.3 500 266.7 600 283.3C700 300 800 300 900 283.3C1000 266.7 1100 233.3 1150 216.7L1200 200V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V300Z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3c72;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,215,0,0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            line-height: 1.8;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .value-item h3 {
+            color: #1e3c72;
+            margin: 1rem 0;
+        }
+
+        .stats {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+        }
+
+        .contact-item strong {
+            color: #1e3c72;
+            min-width: 80px;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .industries {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .industry-tag {
+            background: #2a5298;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AVN SHIPPING FZE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Your Trusted Global Freight Forwarding Partner</h1>
+        <p>Connecting Your Business to the World from the Heart of UAE</p>
+        <a href="#contact" class="cta-button">Get a Quote</a>
+    </section>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2 class="section-title">About AVN Shipping FZE</h2>
+            <p class="section-subtitle">Leading Logistics Provider Based in Ajman, UAE</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p style="margin-bottom: 1.5rem;">
+                        <strong>AVN Shipping FZE</strong> is a UAE-based logistics provider specializing in comprehensive freight forwarding solutions. We are a trusted partner for businesses seeking reliable, efficient, and cost-effective cargo movement.
+                    </p>
+                    <p style="margin-bottom: 1.5rem;">
+                        Our strategic location in the UAE—one of the world's leading logistics hubs—enables us to offer seamless connectivity and global reach. We pride ourselves on delivering tailor-made solutions that meet the unique needs of our clients.
+                    </p>
+                    <p>
+                        <strong>Specialization:</strong> Handling non-hazardous bulk liquid containers with expertise and precision.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 style="color: #1e3c72; margin-bottom: 1rem; font-size: 1.8rem;">Our Vision</h3>
+                    <p style="margin-bottom: 2rem; line-height: 1.8;">
+                        To be the leading freight forwarding company in the UAE, recognized for innovation, reliability, and customer-centric service.
+                    </p>
+                    
+                    <h3 style="color: #1e3c72; margin-bottom: 1rem; font-size: 1.8rem;">Our Mission</h3>
+                    <p style="line-height: 1.8;">
+                        To simplify global trade by offering integrated logistics solutions that ensure timely, secure, and transparent cargo movement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="service-icon">🌐</div>
+                    <h3>Global Network</h3>
+                    <p>Partnerships with leading carriers and agents worldwide</p>
+                </div>
+                <div class="value-item">
+                    <div class="service-icon">💻</div>
+                    <h3>Technology-Driven</h3>
+                    <p>Real-time tracking and digital documentation</p>
+                </div>
+                <div class="value-item">
+                    <div class="service-icon">👥</div>
+                    <h3>Customer Focus</h3>
+                    <p>Dedicated account managers and 24/7 support</p>
+                </div>
+                <div class="value-item">
+                    <div class="service-icon">✅</div>
+                    <h3>Compliance & Safety</h3>
+                    <p>Adherence to international standards and UAE regulations</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2 class="section-title">Our Core Services</h2>
+            <p class="section-subtitle">Comprehensive Freight Solutions Tailored to Your Needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Air Freight</h3>
+                    <p>Fast and secure air cargo solutions with global coverage. Time-sensitive deliveries handled with precision and care.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚢</div>
+                    <h3>Sea Freight</h3>
+                    <p>Full container load (FCL) and less than container load (LCL) services with competitive rates and reliable schedules.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>Land Transport</h3>
+                    <p>Regional trucking and cross-border transport across GCC countries with efficient route planning.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Customs Clearance</h3>
+                    <p>Expert handling of import/export documentation and regulatory compliance to ensure smooth passage.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Cargo Insurance</h3>
+                    <p>Comprehensive protection for goods in transit against loss or damage, giving you peace of mind.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧪</div>
+                    <h3>Bulk Liquid Containers</h3>
+                    <p>Specialized handling of non-hazardous bulk liquid containers with expert care and safety protocols.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="industries" class="section">
+            <h2 class="section-title">Industries We Serve</h2>
+            <p class="section-subtitle">Trusted by Leading Businesses Across Multiple Sectors</p>
+            
+            <div class="industries">
+                <div class="industry-tag">🚗 Automotive</div>
+                <div class="industry-tag">🛢️ Oil & Gas</div>
+                <div class="industry-tag">💊 Pharmaceuticals</div>
+                <div class="industry-tag">📦 E-commerce</div>
+                <div class="industry-tag">🏭 Manufacturing</div>
+            </div>
+        </section>
+    </div>
+
+    <section class="stats">
+        <h2 style="font-size: 2.5rem; margin-bottom: 3rem;">Why Choose AVN Shipping?</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Customer Support</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Compliance</p>
+            </div>
+            <div class="stat-item">
+                <h3>Global</h3>
+                <p>Network Coverage</p>
+            </div>
+            <div class="stat-item">
+                <h3>UAE</h3>
+                <p>Strategic Location</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's Discuss Your Shipping Needs</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="color: #1e3c72; margin-bottom: 2rem; font-size: 1.8rem;">Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <strong>📍 Location:</strong>
+                        <span>Ajman Free Zone, Ajman, United Arab Emirates</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong>
+                        <span>+971 521297318</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>✉️ Email:</strong>
+                        <span>director@avnshipping.com</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>🌐 Website:</strong>
+                        <span>www.avnshipping.com</span>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid #e9ecef;">
+                        <p style="color: #666; line-height: 1.8;">
+                            Ready to streamline your logistics? Contact us today for a customized shipping solution that meets your business needs.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3 style="color: #1e3c72; margin-bottom: 2rem; font-size: 1.8rem;">Business Hours</h3>
+                    
+                    <div class="contact-item">
+                        <strong>Monday - Friday:</strong>
+                        <span>9:00 AM - 6:00 PM</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>Saturday:</strong>
+                        <span>9:00 AM - 2:00 PM</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>Sunday:</strong>
+                        <span>Closed</span>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="mailto:director@avnshipping.com" class="cta-button" style="display: block; text-align: center;">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AVN Shipping FZE. All Rights Reserved.</p>
+            <p style="margin-top: 1rem;">Ajman Free Zone, United Arab Emirates</p>
+        </div>
+    </footer>
+</body>
+</html>
