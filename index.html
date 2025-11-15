@@ -19,13 +19,19 @@
         }
 
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: rgba(30, 60, 114, 0.7);
+            backdrop-filter: blur(10px);
             color: white;
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background: rgba(30, 60, 114, 0.95);
         }
 
         nav {
@@ -38,9 +44,13 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            display: block;
         }
 
         .nav-links {
@@ -61,9 +71,8 @@
         }
 
         .hero {
-            background: 
-   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('VESSEL.JPG');
+            background: linear-gradient(to bottom, rgba(30, 60, 114, 0.75), rgba(0, 0, 0, 0.85)), 
+                        url('VESSEL.JPG');
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
@@ -104,10 +113,7 @@
             letter-spacing: 1px;
             line-height: 1.2;
             text-transform: uppercase;
-            background: linear-gradient(to right, #ffffff, #ffd700);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #ffffff;
         }
 
         .hero p {
@@ -133,18 +139,23 @@
 
         .cta-button {
             display: inline-block;
-            background: #ffd700;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
             color: #1e3c72;
-            padding: 1rem 2.5rem;
+            padding: 1.2rem 3rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255,215,0,0.3);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6);
+            background: linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
         }
 
         .container {
@@ -306,8 +317,18 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                padding: 6rem 1.5rem;
+                min-height: 70vh;
+                background-attachment: scroll;
+            }
+            
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
             }
             
             .about-content,
@@ -325,7 +346,9 @@
 <body>
     <header>
         <nav>
-    <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo" style="height: 60px;">
+            <div class="logo">
+                <img src="AVN-LOGO.png" alt="AVN Shipping FZE Logo">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -337,9 +360,11 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>Your Trusted Global Freight Forwarding Partner</h1>
-        <p>Connecting Your Business to the World from the Heart of UAE</p>
-        <a href="#contact" class="cta-button">Get a Quote</a>
+        <div class="hero-content">
+            <h1>Your Trusted Global Freight Forwarding Partner</h1>
+            <p>Connecting Your Business to the World from the Heart of UAE</p>
+            <a href="#contact" class="cta-button">Get a Quote Today</a>
+        </div>
     </section>
 
     <div class="container">
@@ -492,7 +517,7 @@
                     
                     <div class="contact-item">
                         <strong>📞 Phone:</strong>
-                        <span>+971 521297318</span>
+                        <span>+971 65533503</span>
                     </div>
                     
                     <div class="contact-item">
@@ -516,7 +541,7 @@
                     <h3 style="color: #1e3c72; margin-bottom: 2rem; font-size: 1.8rem;">Business Hours</h3>
                     
                     <div class="contact-item">
-                        <strong>Monday - Saturday:</strong>
+                        <strong>Monday - Friday:</strong>
                         <span>9:00 AM - 6:00 PM</span>
                     </div>
                     
