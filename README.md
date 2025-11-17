@@ -1,4 +1,4 @@
-# 🚢 AVN Shipping FZE — Official Website
+# 🚢 AVN Shipping FZE: Official Website
 
 This repository contains the complete source code for the **official website of AVN Shipping FZE**, a freight forwarding and logistics company based in **Ajman, UAE**.
 
@@ -72,7 +72,6 @@ The website includes a **video background homepage**, transparent navigation bar
 - Services, industries, and mission sections  
 - Mobile-friendly design  
 
----
 
 ## 🚀 Planned Enhancements
 
