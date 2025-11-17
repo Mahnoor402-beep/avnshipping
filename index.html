@@ -18,17 +18,19 @@
             color: #333;
         }
 
-    header {
-    background: transparent; /* fully transparent */
-    color: white; /* text color on video */
+header {
+    background: transparent;
+    color: white;
     padding: 1rem 0;
-    position: absolute; /* overlays the video */
+    position: absolute;
     top: 0;
     width: 100%;
-    z-index: 2; /* above the video */
+    z-index: 2;
     transition: all 0.3s ease;
-    box-shadow: none; /* remove shadow for clean look */
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7); /* white line */
 }
+
 
   header.scrolled {
     background: rgba(0, 0, 0, 0.7); /* semi-transparent dark when scrolling */
@@ -88,11 +90,10 @@
     color: #ffd700; /* optional hover color */
 }
 
-
- .hero {
+.hero {
     position: relative;
     overflow: hidden;
-    min-height: 85vh;
+    min-height: 100vh; /* full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,15 +111,16 @@
     height: auto;
     z-index: 0;
     transform: translate(-50%, -50%);
-    object-fit: cover; /* ensures it covers entire section */
-    filter: brightness(0.6); /* optional, darkens video for better text contrast */
+    object-fit: cover; /* cover entire hero section */
+    filter: brightness(0.6); /* optional for text contrast */
 }
+
 
 .hero-content {
     position: relative;
-    z-index: 2; /* ensures content is above video */
+    z-index: 2;
+    padding-top: 3rem; /* optional, pushes text down a bit */
 }
-
 
         @keyframes fadeInUp {
             from {
