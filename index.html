@@ -19,17 +19,17 @@
         }
 
 header {
-    background: transparent;
-    color: white;
+    background: rgba(255, 255, 255, 0.15); /* very light white tint */
+    backdrop-filter: blur(4px); /* smooth, modern transparency effect */
+    -webkit-backdrop-filter: blur(4px); 
     padding: 1rem 0;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 2;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* subtle light shadow */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7); /* white line */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* soft white separator line */
 }
+
 
 
 
