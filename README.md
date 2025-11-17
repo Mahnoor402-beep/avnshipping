@@ -1,109 +1,97 @@
-# 🚢 **AVN Shipping FZE — Official Website**
+# 🚢 AVN Shipping FZE — Official Website
 
 This repository contains the complete source code for the **official website of AVN Shipping FZE**, a freight forwarding and logistics company based in **Ajman, UAE**.
 
-The website features a modern **video-background homepage**, transparent navigation bar, and a clean professional design suitable for corporate logistics branding.
+The website includes a **video background homepage**, transparent navigation bar, and a clean, corporate design styled for logistics and shipping services.
 
 ---
 
-## 🌍 **Live Website**
+## 🌍 Live Website
 
 👉 **https://mahnoor402-beep.github.io**
 
 ---
 
-## 📂 **Project Structure**
-
+## 📂 Project Structure
 ├── index.html # Main website file
 ├── AVN-LOGO.png # Company logo
 ├── VESSEL.JPG # Section background image
-├── hero-video.mp4 # Homepage video banner
+├── hero-video.mp4 # Homepage hero background video
 └── README.md # Project documentation
-
-markdown
-Copy code
 
 ---
 
-## ✨ **Website Features**
+## ✨ Website Features
 
-### ⭐ **Modern Hero Section**
+### ⭐ Modern Hero Section
 - Full-screen **video background**
-- Clean overlay text
-- Transparent navigation bar with light white tint
+- White-tinted transparent navigation bar
+- Clean title and tagline overlay
 
-### ⭐ **Responsive Navigation Bar**
+### ⭐ Responsive Navigation Bar
 - Home  
 - About  
 - Services  
 - Industries  
 - Contact  
 
-### ⭐ **Professional Corporate UI**
-- Minimal, clean, shipping-industry theme  
-- Fully responsive for desktop, tablet & mobile  
+### ⭐ Professional Corporate Design
+- Minimal and modern shipping-industry layout  
+- Fully responsive on all devices  
+- Clean typography & branding  
 
-### ⭐ **100% GitHub Pages Hosted**
+### ⭐ Hosted on GitHub Pages
 - Fast  
 - Secure  
 - No backend required  
 
 ---
 
-## 🛠️ **Technologies Used**
+## 🛠️ Technologies Used
 
 - **HTML5**
 - **CSS3**
-- **JavaScript (optional enhancements)**
-- **GitHub Pages Hosting**
+- **JavaScript** (for optional enhancements)
+- **GitHub Pages**
 
 ---
 
-## 🔧 **How to Edit / Customize**
+## 🔧 How to Edit / Customize
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/mahnoor402-beep/mahnoor402-beep.github.io
-Open index.html in any editor (VS Code recommended).
-
-Customize:
-
-Text
-
-Images
-
-Video
-
-Colors
-
-Sections
-
-Save, commit & push.
-GitHub Pages updates automatically within 1–2 minutes.
-
 🚀 Planned Enhancements
-Separate About, Services, Industries pages
 
-Contact form integration (Formspree / Backend API)
+Dedicated About, Services, and Industries pages
 
-Service cards + industry sectors
+Contact form using Formspree / API
 
-Client testimonials
+Client testimonials section
 
-Animated counters
+Animated counters (TEUs handled, clients, global partners)
 
-SEO enhancements
+Image sliders for vessel and warehouse photos
+
+SEO optimization & meta tags
 
 👩‍💼 Maintainer
+
 Mahnoor Rehman
 Customer Service – AVN Shipping FZE
 📧 cs@avnshipping.com
+
 🌐 www.avnshipping.com
+
 📍 Ajman, UAE
 
-yaml
-Copy code
 
 ---
 
-If you want, I can make your README **more stylish with colors, badges, and icons**, like 
+If you want, I can also make:
+
+✨ A **premium README** with badges, colors, icons  
+✨ A version with your **logo centered at the top**  
+✨ A dark / gradient theme README  
+
+Just tell me!
