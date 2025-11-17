@@ -305,10 +305,15 @@
             gap: 1rem;
         }
 
-        .contact-item strong {
-            color: #1e3c72;
-            min-width: 80px;
-        }
+.contact-item strong {
+    color: #1e3c72;
+    min-width: 80px;
+    display: flex;
+    align-items: center; /* vertically center the emoji and text */
+    gap: 0.3rem; /* small gap between emoji and label */
+    font-weight: 600;
+}
+
 
         footer {
             background: #1e3c72;
@@ -591,10 +596,11 @@
                 <div class="contact-info">
                     <h3 style="color: #1e3c72; margin-bottom: 2rem; font-size: 1.8rem;">Contact Information</h3>
                     
-                    <div class="contact-item">
-                        <strong>📍 Location:</strong>
-                        <span>Gate 1, Ajman Free Zone, Ajman, United Arab Emirates</span>
-                    </div>
+                   <div class="contact-item">
+    <strong>Location:</strong>
+    <span>📍 Gate 1, Ajman Free Zone, Ajman, United Arab Emirates</span>
+</div>
+
                     
                     <div class="contact-item">
                         <strong>📞 Phone:</strong>
