@@ -61,32 +61,45 @@ The website includes a **video background homepage**, transparent navigation bar
 1. Clone the repository:
    ```bash
    git clone https://github.com/mahnoor402-beep/mahnoor402-beep.github.io
-🚀 Planned Enhancements
-
-Dedicated About, Services, and Industries pages
-
-Contact form using Formspree / API
-
-Client testimonials section
-
-Animated counters (TEUs handled, clients, global partners)
-
-Image sliders for vessel and warehouse photos
-
-SEO optimization & meta tags
-
-👩‍💼 Maintainer
-
-Mahnoor Rehman
-Customer Service – AVN Shipping FZE
-📧 cs@avnshipping.com
-
-🌐 www.avnshipping.com
-
-📍 Ajman, UAE
-
 
 ---
+
+## 🎨 Features Included
+
+- Responsive navigation bar  
+- Full-screen hero background video  
+- Modern UI with clean layout  
+- Services, industries, and mission sections  
+- Mobile-friendly design  
+
+---
+
+## 🚀 Planned Enhancements
+
+- **Dedicated About, Services, and Industries pages**  
+- **Contact form using Formspree / API**  
+- **Client testimonials section**  
+- **Animated counters (TEUs handled, clients, global partners)**  
+- **Image sliders for vessel and warehouse photos**  
+- **SEO optimization & meta tags**
+
+---
+
+## 👩‍💼 **Maintainer**
+
+**Mahnoor Rehman**  
+**Customer Service – AVN Shipping FZE**  
+📧 **cs@avnshipping.com**  
+🌐 **www.avnshipping.com**  
+📍 **Ajman, UAE**
+
+---
+
+## 📜 License
+
+This project is private and maintained by **AVN Shipping FZE**.  
+Unauthorized copying or reuse is not permitted.
+
 
 If you want, I can also make:
 
