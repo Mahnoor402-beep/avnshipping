@@ -372,16 +372,19 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
     background: #00d4ff;
 }
 
-/* Map styling */
-.map-container {
-    width: 100%;
-    height: 300px;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
 
+/* Map Box */
+.map-container {
+    max-width: 900px;      /* Controls map width */
+    margin: 0 auto 20px;   /* Center map + spacing */
+    border-radius: 10px;
+    overflow: hidden;
+}
+        .map-container iframe {
+    width: 100%;
+    height: 350px;         /* Reduce map height */
+    border: 0;
+}
 /* Footer text inside contact */
 .contact-section .copyright {
     font-size: 14px;
@@ -397,12 +400,21 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
 
 
 
-        footer {
-            background: #1e3c72;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
+ /* Footer Section */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+        /* Copyright */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
 
         .industries {
             display: flex;
@@ -721,7 +733,7 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
     <div class="contact-box contact-info-box">
         <h3>Contact Information</h3>
         <p><strong>📍 Location:</strong> Gate 1, Ajman Free Zone, Ajman, UAE</p>
-        <p><strong>📞 Phone:</strong> +971 6 5533503</p>
+        <p><strong>📞 Phone:</strong> +971 52 575 0630 </p>
         <p><strong>✉ Email:</strong> sales@avnshipping.com</p>
         <p><strong>🌐 Website:</strong> www.avnshipping.com</p>
     </div>
