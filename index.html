@@ -343,8 +343,27 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
 }
 
 .contact-box p {
+    display: flex;
+    align-items: center;
+    gap: 8px;                     /* spacing between label & value */
+    font-size: 15px;
     margin: 10px 0;
-    line-height: 1.6;
+}
+
+.contact-box p strong {
+    min-width: 120px;             /* keeps labels aligned */
+    display: inline-block;
+    color: #fff;                  /* white for premium look */
+    font-weight: 600;
+}
+
+.contact-box {
+    backdrop-filter: blur(5px);    /* classy glass effect */
+    background: rgba(0,0,0,0.4);   /* transparent dark overlay */
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;             /* makes box wider & clean */
 }
 
 .quote-btn {
@@ -706,14 +725,14 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
         <h2>Get In Touch</h2>
         <p class="subtitle">Let's Discuss Your Shipping Needs</p>
 
-        <div class="contact-boxes">
-            <div class="contact-box">
-                <h3>Contact Information</h3>
-                <p><strong>📍 Location:</strong><br> Gate 1, Ajman Free Zone, Ajman, UAE</p>
-                <p><strong>📞 Phone:</strong><br> +971 6 5533503</p>
-                <p><strong>✉ Email:</strong><br> sales@avnshipping.com</p>
-                <p><strong>🌐 Website:</strong><br> www.avnshipping.com</p>
-            </div>
+   <div class="contact-box">
+    <h3>Contact Information</h3>
+
+    <p><strong>📍 Location:</strong> Gate 1, Ajman Free Zone, Ajman, UAE</p>
+    <p><strong>📞 Phone:</strong> +971 6 5533503</p>
+    <p><strong>✉ Email:</strong> sales@avnshipping.com</p>
+    <p><strong>🌐 Website:</strong> www.avnshipping.com</p>
+</div>
 
             <div class="contact-box">
                 <h3>Business Hours</h3>
