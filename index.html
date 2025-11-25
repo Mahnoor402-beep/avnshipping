@@ -342,29 +342,33 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
     color: #00b4d8; /* teal highlight */
 }
 
+/* Make items appear on one line */
 .contact-box p {
     display: flex;
     align-items: center;
-    gap: 8px;                     /* spacing between label & value */
+    gap: 8px;
     font-size: 15px;
     margin: 10px 0;
 }
 
+/* Align all labels (📍 Location / 📞 Phone / ✉ Email etc.) */
 .contact-box p strong {
-    min-width: 120px;             /* keeps labels aligned */
+    min-width: 120px;
     display: inline-block;
-    color: #fff;                  /* white for premium look */
     font-weight: 600;
+    color: #fff;
 }
 
+/* Contact box appearance – Business Hours box stays same */
 .contact-box {
-    backdrop-filter: blur(5px);    /* classy glass effect */
-    background: rgba(0,0,0,0.4);   /* transparent dark overlay */
+    background: rgba(0, 0, 0, 0.45);   /* Transparent + matches bg */
     padding: 25px;
     border-radius: 12px;
     width: 100%;
-    max-width: 420px;             /* makes box wider & clean */
+    max-width: 420px;
+    backdrop-filter: blur(5px);        /* premium glass look */
 }
+
 
 .quote-btn {
     display: inline-block;
@@ -725,7 +729,7 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
         <h2>Get In Touch</h2>
         <p class="subtitle">Let's Discuss Your Shipping Needs</p>
 
-   <div class="contact-box">
+<div class="contact-box">
     <h3>Contact Information</h3>
 
     <p><strong>📍 Location:</strong> Gate 1, Ajman Free Zone, Ajman, UAE</p>
@@ -733,6 +737,7 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
     <p><strong>✉ Email:</strong> sales@avnshipping.com</p>
     <p><strong>🌐 Website:</strong> www.avnshipping.com</p>
 </div>
+
 
             <div class="contact-box">
                 <h3>Business Hours</h3>
