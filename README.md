@@ -100,10 +100,3 @@ This project is private and maintained by **AVN Shipping FZE**.
 Unauthorized copying or reuse is not permitted.
 
 
-If you want, I can also make:
-
-✨ A **premium README** with badges, colors, icons  
-✨ A version with your **logo centered at the top**  
-✨ A dark / gradient theme README  
-
-Just tell me!
