@@ -318,68 +318,54 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
 }
 
 /* Make the contact boxes slightly transparent */
+/* Contact boxes layout */
 .contact-boxes {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    gap: 30px;                  /* space between boxes */
+    flex-wrap: wrap;            /* mobile responsive */
+    margin-top: 30px;
 }
 
+/* Individual box styling */
 .contact-box {
-    background: rgba(255,255,255,0.1); /* transparent */
-    padding: 25px;
-    width: 320px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    text-align: left;
-    backdrop-filter: blur(6px); /* adds frosted glass effect */
-}
-
-.contact-box h3 {
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: #00b4d8; /* teal highlight */
-}
-
-/* Make items appear on one line */
-.contact-box p {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 15px;
-    margin: 10px 0;
-}
-
-/* Align all labels (📍 Location / 📞 Phone / ✉ Email etc.) */
-.contact-box p strong {
-    min-width: 120px;
-    display: inline-block;
-    font-weight: 600;
-    color: #fff;
-}
-
-/* Contact box appearance – Business Hours box stays same */
-.contact-box {
-    background: rgba(0, 0, 0, 0.45);   /* Transparent + matches bg */
+    background: rgba(0, 0, 0, 0.45);  /* transparent glass look */
     padding: 25px;
     border-radius: 12px;
     width: 100%;
-    max-width: 420px;
-    backdrop-filter: blur(5px);        /* premium glass look */
+    max-width: 380px;
+    color: #fff;
+    backdrop-filter: blur(4px);
 }
 
+/* One-line layout inside Contact Information box ONLY */
+.contact-info-box p {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
 
+/* Align labels */
+.contact-info-box p strong {
+    min-width: 130px;
+    display: inline-block;
+}
+
+/* Keep business hours untouched */
+.business-hours-box p strong {
+    min-width: 160px;
+}
+
+/* Request quote button */
 .quote-btn {
     display: inline-block;
-    margin-top: 20px;
+    background: #ffffff;
     padding: 10px 18px;
-    background: #00b4d8;
-    color: #0a1a2a;
-    border-radius: 8px;
+    color: #000;
+    margin-top: 15px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease;
 }
 
 .quote-btn:hover {
@@ -729,25 +715,27 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
         <h2>Get In Touch</h2>
         <p class="subtitle">Let's Discuss Your Shipping Needs</p>
 
-<div class="contact-box">
-    <h3>Contact Information</h3>
+<div class="contact-boxes">
 
-    <p><strong>📍 Location:</strong> Gate 1, Ajman Free Zone, Ajman, UAE</p>
-    <p><strong>📞 Phone:</strong> +971 6 5533503</p>
-    <p><strong>✉ Email:</strong> sales@avnshipping.com</p>
-    <p><strong>🌐 Website:</strong> www.avnshipping.com</p>
+    <!-- Contact Information Box -->
+    <div class="contact-box contact-info-box">
+        <h3>Contact Information</h3>
+        <p><strong>📍 Location:</strong> Gate 1, Ajman Free Zone, Ajman, UAE</p>
+        <p><strong>📞 Phone:</strong> +971 6 5533503</p>
+        <p><strong>✉ Email:</strong> sales@avnshipping.com</p>
+        <p><strong>🌐 Website:</strong> www.avnshipping.com</p>
+    </div>
+
+    <!-- Business Hours Box -->
+    <div class="contact-box business-hours-box">
+        <h3>Business Hours</h3>
+        <p><strong>Monday - Saturday:</strong> 8:30 AM – 5:30 PM</p>
+        <p><strong>Sunday:</strong> Closed</p>
+        <a href="mailto:sales@avnshipping.com" class="quote-btn">Request a Quote</a>
+    </div>
+
 </div>
 
-
-            <div class="contact-box">
-                <h3>Business Hours</h3>
-                <p><strong>Monday - Saturday:</strong><br> 8:30 AM – 5:30 PM</p>
-                <p><strong>Sunday:</strong><br> Closed</p>
-<a href="mailto:sales@avnshipping.com?subject=Request%20a%20Quote&body=Hello%20AVN%20Shipping%20Team,%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20quote%20for%20your%20services.%0D%0A%0D%0AThank%20you." 
-   class="quote-btn" 
-   style="background: rgba(0,180,216,0.8); color: #0a1a2a; text-decoration: none;">
-   Request a Quote
-</a>
 
 </a>
 
