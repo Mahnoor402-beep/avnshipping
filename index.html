@@ -298,29 +298,39 @@ header {
             margin-top: 2rem;
         }
 
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+      .service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
 
-        .service-card h3 {
-            color: #1e3c72;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
+.service-card h3 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
 
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Add this below your service-card styles */
+.service-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
 
         .about-content {
             display: grid;
@@ -719,7 +729,7 @@ footer {
 
         <div class="service-card animated slide-up delay-0">
             <div class="service-icon">
-                <img src="air.png" alt="Air Freight">
+<img src="air.png" alt="Air Freight" class="service-img">
             </div>
             <h3>Air Freight</h3>
             <p>Fast and secure air cargo solutions with global coverage.</p>
@@ -727,7 +737,7 @@ footer {
 
         <div class="service-card animated slide-up delay-1">
             <div class="service-icon">
-                <img src="sea.png" alt="Sea Freight">
+                <img src="sea.png" alt="Sea Freight" class="service-img" >
             </div>
             <h3>Sea Freight</h3>
             <p>FCL and sea freight with reliable schedules and optimized routing.</p>
@@ -735,7 +745,7 @@ footer {
 
         <div class="service-card animated slide-up delay-2">
             <div class="service-icon">
-                <img src="land.png" alt="Land Transport">
+                <img src="land.png" alt="Land Transport" class="service-img">
             </div>
             <h3>Land Transport</h3>
             <p>GCC cross-border trucking and domestic distribution with tracking.</p>
@@ -743,7 +753,7 @@ footer {
 
         <div class="service-card animated slide-up delay-3">
             <div class="service-icon">
-                <img src="customs.png" alt="Customs Clearance">
+                <img src="customs.png" alt="Customs Clearance" class="service-img">
             </div>
             <h3>Customs Clearance</h3>
             <p>Complete documentation, approvals, and fast-track processing.</p>
@@ -751,7 +761,7 @@ footer {
 
         <div class="service-card animated slide-up delay-4">
             <div class="service-icon">
-                <img src="flexi.png" alt="Flexi Tank">
+                <img src="flexi.png" alt="Flexi Tank" class="service-img">
             </div>
             <h3>Flexi Tank & ISO Tank Handling</h3>
             <p>Professional handling of non-hazardous bulk liquid containers.</p>
@@ -759,7 +769,7 @@ footer {
 
         <div class="service-card animated slide-up delay-5">
             <div class="service-icon">
-                <img src="warehouse.png" alt="Warehousing">
+                <img src="warehouse.png" alt="Warehousing" class="service-img">
             </div>
             <h3>Warehousing & Distribution</h3>
             <p>Secure storage, inventory control, and seamless last-mile delivery.</p>
