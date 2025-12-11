@@ -629,24 +629,23 @@ footer {
 .delay-4  { animation-delay: 0.8s; }
 .delay-5  { animation-delay: 1s; }
         
-.social-icons {
-    position: fixed;       /* stays in place when scrolling */
-    bottom: 20px;          /* distance from bottom */
-    right: 20px;           /* distance from right */
-    display: flex;
-    flex-direction: column; /* stack icons vertically */
-    gap: 10px;             /* spacing between icons */
-    z-index: 999;          /* on top of all content */
+.social-icons-horizontal {
+    position: fixed;        /* fixed at bottom-right */
+    bottom: 10px;           /* distance from bottom */
+    right: 10px;            /* distance from right */
+    display: flex;           /* horizontal layout */
+    gap: 15px;               /* space between icons */
+    z-index: 999;            /* above all content */
 }
 
-.social-icons a img {
-    width: 40px;           /* size of icons */
+.social-icons-horizontal a img {
+    width: 40px;             /* icon size */
     height: 40px;
     transition: transform 0.2s;
 }
 
-.social-icons a img:hover {
-    transform: scale(1.1); /* hover effect */
+.social-icons-horizontal a img:hover {
+    transform: scale(1.1);   /* hover effect */
 }
 
     </style>
@@ -961,7 +960,7 @@ document.querySelectorAll('.animated').forEach(el => {
 });
 </script>
 
-<div class="social-icons">
+<div class="social-icons-horizontal">
     <a href="https://www.facebook.com/YourPage" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
     </a>
