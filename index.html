@@ -400,20 +400,31 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
 .contact-boxes {
     display: flex;
     justify-content: center;
-    gap: 30px;                  /* space between boxes */
-    flex-wrap: wrap;            /* mobile responsive */
+    gap: 30px;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
 /* Individual box styling */
 .contact-box {
-    background: rgba(0, 0, 0, 0.45);  /* transparent glass look */
+    background: #ffffff;      /* white background */
     padding: 25px;
     border-radius: 12px;
     width: 100%;
     max-width: 380px;
-    color: #fff;
-    backdrop-filter: blur(4px);
+    color: #000000;           /* black text */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Heading styling */
+.contact-box h3 {
+    background: #000000;      /* black background */
+    color: #ffffff;           /* white text */
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    text-align: center;
+    margin: -10px 0 15px 0;   /* lift effect */
 }
 
 /* One-line layout inside Contact Information box ONLY */
@@ -429,7 +440,7 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
     display: inline-block;
 }
 
-/* Keep business hours untouched */
+/* Business hours labels */
 .business-hours-box p strong {
     min-width: 160px;
 }
