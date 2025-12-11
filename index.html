@@ -6,6 +6,25 @@
     <meta name="description" content="AVN Shipping FZE - Leading freight forwarding company in Ajman, UAE. Air freight, sea freight, land transport, customs clearance services.">
     <title>AVN Shipping FZE - Freight Forwarding Solutions in UAE</title>
     <style>
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.social-icons a img {
+    width: 40px;      /* size of icons */
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);  /* hover effect */
+}
         * {
             margin: 0;
             padding: 0;
@@ -940,6 +959,17 @@ document.querySelectorAll('.animated').forEach(el => {
 });
 </script>
 
+<div class="social-icons">
+    <a href="https://www.facebook.com/avnshippingfze" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/avn-shipping-fze" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/in/avn-shipping-fze" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+    </a>
+</div>
 
 </body>
 </html> 
