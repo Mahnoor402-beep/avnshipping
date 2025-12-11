@@ -515,14 +515,16 @@ background: url('contact%20background.jpg') no-repeat center center/cover;
 
 
 
- /* Footer Section */
-footer {
-    background: transparent; /* remove black */
+ footer {
+    background: transparent; /* or any color you like */
     color: #fff;
     padding: 40px 20px;
-    text-align: center;
+    text-align: center; /* center text */
+    display: flex;
+    flex-direction: column; /* stack text + icons vertically */
+    align-items: center;    /* center horizontally */
+    gap: 15px;              /* space between text and icons */
 }
-
         /* Copyright */
 .footer-bottom {
     text-align: center;
@@ -644,12 +646,10 @@ footer {
 .delay-5  { animation-delay: 1s; }
         
 .social-icons-horizontal {
-    display: flex;           /* horizontal layout */
-    justify-content: flex-end; /* align to right, use center for center */
+    display: flex;
+    justify-content: center; /* center the icons */
     gap: 15px;               /* space between icons */
-    margin-top: 15px;        /* spacing above */
 }
-
 .social-icons-horizontal a img {
     width: 40px;
     height: 40px;
@@ -931,22 +931,22 @@ observer.observe(statsSection);
          
 </div>
 <footer>
-
-<p class="copyright" style="text-align: center;">
-    © 2025 AVN Shipping FZE. All Rights Reserved.  
-</p>
-<div class="social-icons-horizontal">
-    <a href="https://www.facebook.com/YourPage" target="_blank" aria-label="Facebook">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-    </a>
-    <a href="https://www.instagram.com/YourProfile" target="_blank" aria-label="Instagram">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
-    </a>
-    <a href="https://www.linkedin.com/in/YourProfile" target="_blank" aria-label="LinkedIn">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-    </a>
-</div>
+    <p class="copyright">
+        © 2025 AVN Shipping FZE. All Rights Reserved.  
+    </p>
+    <div class="social-icons-horizontal">
+        <a href="https://www.facebook.com/YourPage" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/YourProfile" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+    </div>
 </footer>
+
 
 </section>
 <script>
