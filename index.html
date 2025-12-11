@@ -6,25 +6,7 @@
     <meta name="description" content="AVN Shipping FZE - Leading freight forwarding company in Ajman, UAE. Air freight, sea freight, land transport, customs clearance services.">
     <title>AVN Shipping FZE - Freight Forwarding Solutions in UAE</title>
     <style>
-.social-icons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 999;
-}
 
-.social-icons a img {
-    width: 40px;      /* size of icons */
-    height: 40px;
-    transition: transform 0.2s;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.2);  /* hover effect */
-}
         * {
             margin: 0;
             padding: 0;
@@ -646,6 +628,26 @@ footer {
 .delay-3  { animation-delay: 0.6s; }
 .delay-4  { animation-delay: 0.8s; }
 .delay-5  { animation-delay: 1s; }
+        
+.social-icons {
+    position: fixed;       /* stays in place when scrolling */
+    bottom: 20px;          /* distance from bottom */
+    right: 20px;           /* distance from right */
+    display: flex;
+    flex-direction: column; /* stack icons vertically */
+    gap: 10px;             /* spacing between icons */
+    z-index: 999;          /* on top of all content */
+}
+
+.social-icons a img {
+    width: 40px;           /* size of icons */
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* hover effect */
+}
 
     </style>
 </head>
@@ -960,16 +962,17 @@ document.querySelectorAll('.animated').forEach(el => {
 </script>
 
 <div class="social-icons">
-    <a href="https://www.facebook.com/avnshippingfze" target="_blank">
-        <img src="facebook.png" alt="Facebook">
+    <a href="https://www.facebook.com/YourPage" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
     </a>
-    <a href="https://www.instagram.com/avn-shipping-fze" target="_blank">
-        <img src="instagram.png" alt="Instagram">
+    <a href="https://www.instagram.com/YourProfile" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
     </a>
-    <a href="https://www.linkedin.com/in/avn-shipping-fze" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn">
+    <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
     </a>
 </div>
+
 
 </body>
 </html> 
